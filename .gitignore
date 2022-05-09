@@ -1,0 +1,7 @@
+*.tfstate
+*.terraform
+*.lock
+*.backup
+*.bk
+# クレデンシャルファイル
+account-learngcp.json
