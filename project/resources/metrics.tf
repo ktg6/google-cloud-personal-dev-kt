@@ -1,5 +1,5 @@
-resource "google_logging_metric" "common_cluster_batch_warning_log" {
-  name     = "cluster-${var.env}-aa-common01-batch_warning_log"
+resource "google_logging_metric" "cluster_batch_warning_log" {
+  name     = "cluster-${var.env}-batch_warning_log"
   project  = var.project_id
   filter   = <<-EOF
     resource.type="k8s_cluster"

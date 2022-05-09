@@ -23,11 +23,11 @@ resource "google_monitoring_alert_policy" "warning_batch_log_alert_cluster" {
   display_name = "Cronjob＆Batch WARNING Alert cluster-${var.env}"
   # Cronjob,Batch関連のWARNINGの発生を検知されたら通知する
   conditions {
-    display_name = google_logging_metric.common_cluster_batch_warning_log.name
+    display_name = google_logging_metric.cluster_batch_warning_log.name
 
     condition_threshold {
       filter = <<-EOF
-          metric.type="logging.googleapis.com/user/${google_logging_metric.common_cluster_batch_warning_log.name}"
+          metric.type="logging.googleapis.com/user/${google_logging_metric.cluster_batch_warning_log.name}"
           resource.type="k8s_cluster"
       EOF
       comparison      = "COMPARISON_GT"
