@@ -18,3 +18,12 @@ provider "google" {
     region  = "asia-northeast1"
     zone    = "asia-northeast1-a"
 }
+
+module "pro" {
+  source         = "../../resources"
+  region         = "asia-northeast1"
+  project_id     = "learngcp-335008"
+  env            = "pro"
+  env_location   = "pro-tokyo"
+  env_production = true
+}
