@@ -14,6 +14,7 @@ warning_alert_cluster = {
 
 data "google_monitoring_notification_channel" "cluster_warning_alert_channel" {
   display_name = "warning-alert-log-detection"
+  project      = var.project_id
 }
 
 # Cluster Cronjob,Batch異常検知用

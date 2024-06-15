@@ -16,22 +16,6 @@ terraform {
   }
 }
 
-provider "google" {
-  credentials = file("account-learngcp.json")
-  project     = "learngcp-335008"
-  region      = "asia-northeast1"
-  zone        = "asia-northeast1-a"
-}
-
-# module "pro" {
-#   source         = "../../resources"
-#   region         = "asia-northeast1"
-#   project_id     = "learngcp-335008"
-#   env            = "pro"
-#   env_location   = "pro-tokyo"
-#   env_production = true
-# }
-
 provider "github" {
   owner = "ktg6"
   token = var.token
@@ -40,9 +24,4 @@ provider "github" {
 # resource "github_repository" "first_repo" {
 #   name    = "first_repo"
 #   private = true
-# }
-
-# resource "github_repository" "ratelimiting" {
-#   name        = "ratelimiting-laravel-sample"
-#   visibility = "public"
 # }
