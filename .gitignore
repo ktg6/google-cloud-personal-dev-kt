@@ -3,5 +3,8 @@
 *.lock
 *.backup
 *.bk
+*.tfvars
+*.tfstate.*
+.DS_Store
 # クレデンシャルファイル
-account-learngcp.json
+gcp-credential.json
