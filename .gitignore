@@ -6,5 +6,7 @@
 *.tfvars
 *.tfstate.*
 .DS_Store
+public_html/
+.env.template
 # クレデンシャルファイル
 gcp-credential.json
