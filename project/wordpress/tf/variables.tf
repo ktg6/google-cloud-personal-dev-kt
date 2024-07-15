@@ -4,7 +4,7 @@ variable "project_id" {
 
 variable "region" {
   type    = string
-  default = "asia-northeast1"
+  default = "asia-east1"
 }
 
 variable "db_password" {
